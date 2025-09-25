@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace PgnParser.src
 {
-    internal class FileReader
+    internal class Pgn
 
     {
         private string _filepath { get; set; }
-        public FileReader(string filepath)
+        public string Event { get; set; }
+
+        public Pgn(string filepath)
         {
             _filepath = filepath;
             readFile();
@@ -26,8 +28,14 @@ namespace PgnParser.src
                     using (StreamReader sr = new StreamReader(_filepath))
                     {
                         string line;
+                    
                         while ((line = sr.ReadLine()) != null)
                         {
+                            if (line.Contains("Event"))
+                            {
+                                Event = line.Substring(6, line.Length - 7);
+                                Console.WriteLine(Event);
+                            }
                             Console.WriteLine(line);
                         }
                     }
