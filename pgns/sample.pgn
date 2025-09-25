@@ -1,0 +1,17 @@
+﻿[Event "Sample Game 1"]
+[Site "Internet"]
+[Date "2025.09.24"]
+[Round "1"]
+[White "WhitePlayer"]
+[Black "BlackPlayer"]
+[Result "1-0"]
+[WhiteElo "1800"]
+[BlackElo "1750"]
+[ECO "C20"]
+[Opening "King's Pawn Game"]
+
+1. e4 e5 2. Qh5 Nc6 3. Bc4 Nf6? {This allows the classic mate.} 
+4. Qxf7# 1-0
+
+{ A short illustrative game. As a safer line for Black after 2.Qh5, 
+  one idea is (2... Nf6 3.Qxe5+ Be7 4.Nc3) with decent play. }
